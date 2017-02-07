@@ -1,0 +1,54 @@
+@0
+
+
+@1
+MOV 18, ACC
+SUB UP
+MOV ACC, DOWN
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+MOV UP, ACC
+SWP
+L:SWP
+MOV ACC, RIGHT
+ADD 1
+SAV
+SUB 18
+JLZ L
+MOV -1, RIGHT
+
+@6
+S:
+MOV LEFT, ACC
+JLZ E
+SWP
+MOV ACC, DOWN
+SWP
+MOV ACC, DOWN
+MOV 3, DOWN
+MOV -1, DOWN
+JMP S
+E: SWP
+ADD 1
+SWP
+
+@7
+
+
+@8
+
+
+@9
+MOV UP, DOWN
+
+@10
+
